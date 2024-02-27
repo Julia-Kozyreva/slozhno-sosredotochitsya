@@ -1,5 +1,67 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  padding: 10px;
+  font-size: 18px;
+  background-image: var(--cover-image);
+  color: var(--text-color);
+  font-family: var(--main-font);
+  background-color: var(--bg-color);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (min-width: 375px) {
+
+  .page {
+    padding: 20px;
+  }
+}
+
+.accent-header-title {
+  color: var(--header-title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-weight: 700;
+  font-size: var(--accent-mobile-size);
+  font-family: var(--main-font);
+  line-height: 82.5%;
+}
+
+@media (min-width: 1024px) {
+
+  .accent-header-title {
+    font-size: var(--accent-desktop-size);
+  }
+}
+
+.title-decor {
+  color: var(--accent-text-color);
+  background-color: var(--accent-bg);
+}
+
+.accent-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+
+.h2-heading {
+  margin: 0 0 20px;
+  color: var(--heading-clr);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.accented-link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-clr);
+}
+
+.paragraph-text {
+  margin: 10px 0 20px;
+  line-height: 130%;
 }
