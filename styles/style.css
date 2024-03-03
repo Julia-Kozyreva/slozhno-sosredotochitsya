@@ -48,7 +48,6 @@
 .h2-heading {
   margin: 0 0 20px;
   color: var(--heading-clr);
-  font-weight: 700;
   font-size: 18px;
   line-height: 130%;
 }
@@ -67,6 +66,7 @@
   display: grid;
   grid-template-rows: auto max-content auto;
   align-items: center;
+  height: 100vh;
 }
 
 .decorative-rec-icon {
@@ -192,6 +192,7 @@
 }
 
 .header__heading {
+  font-family: var(--main-font);
   align-self: self-start;
   margin: 15px 0 0;
   text-shadow: 4px 4px 0 var(--accent-clr);
@@ -370,4 +371,15 @@
     object-position: top;
     block-size: 100%;
   }
+}
+
+.footer {
+  display: grid;
+  height: 100vh;
+}
+
+.footer__text {
+  justify-self: center;
+  align-self: center;
+  text-shadow: 2px 2px 0 var(--accent-clr);
 }
