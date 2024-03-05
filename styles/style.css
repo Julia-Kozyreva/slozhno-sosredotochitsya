@@ -5,7 +5,7 @@
   font-size: 18px;
   background-image: var(--cover-image);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -45,7 +45,7 @@
   font-weight: 700;
 }
 
-.h2-heading {
+.h-heading {
   margin: 0 0 20px;
   color: var(--heading-clr);
   font-size: 18px;
@@ -62,11 +62,14 @@
   line-height: 130%;
 }
 
+.last-paragraph {
+  gap: 0 0;
+}
 .header {
   display: grid;
   grid-template-rows: auto max-content auto;
   align-items: center;
-  height: 100vh;
+  min-height: 668px;
 }
 
 .decorative-rec-icon {
@@ -92,7 +95,8 @@
 
 .decorated-zone {
   position: relative;
-  min-block-size: 97vh;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 @media (min-width: 768px) {
@@ -375,7 +379,7 @@
 
 .footer {
   display: grid;
-  height: 100vh;
+  min-height: 668px;
 }
 
 .footer__text {
